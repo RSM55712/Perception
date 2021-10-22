@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Perception",
+  "version": "0.1",
+  "description": "",
+  "icons": {"128":"perception.png"},
+  "browser_action": {
+    "default_title": "Perception",
+    "default_popup": "popup/default.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

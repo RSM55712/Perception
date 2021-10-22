@@ -1,0 +1,7 @@
+http://perception.tk {
+  root .
+}
+
+http://api.perception.tk {
+  proxy / 127.0.0.1:8000
+}

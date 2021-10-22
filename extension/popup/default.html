@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/script.js"></script>
+  <style>
+    body {
+      width: 600px;
+      touch-action: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <hr>
+    <h2 class="text-center">Perception</h2>
+    <hr>
+
+    <div class="d-flex justify-content-center" id="loader-container">
+      <div class="spinner-grow m-5" id="loader" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div id="alerts"></div>
+
+    <div id="content" class="d-none">
+      <section>
+        <h4 id="title" class="font-weight-bold"></h4>
+        <h4 id="authors"></h4>
+        <h4 id="publish_date"></h4>
+      </section>
+      <hr>
+      <section>
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar bg-danger" role="progressbar" id="left"><h3>Left</h3></div>
+          <div class="progress-bar" role="progressbar" id="right"><h3>Right</h3></div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 id="sentiment"></h4>
+      </section>
+      <hr id="entities-separator" class="d-none">
+      <section id="entities"></section>
+      <hr>
+      <section>
+        <h4>Summary</h4>
+        <p id="summary"></p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
